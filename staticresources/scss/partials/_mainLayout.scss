@@ -1,0 +1,84 @@
+// Main Layout [Start]
+.mainLayout{min-height: 100vh; display: flex;  margin:0 toRem(-16);
+  @include mq(0, $mq-medium) {
+    flex-direction: column;
+  }
+
+  .sidebarCol{
+    width: $sidebarCol-width; padding: 0;
+    
+    @include mq(0, $mq-medium) {
+      width: 100%;
+    }
+  }
+  .contentCol{
+    background: $gray-200; width: $contentCol-width; min-height: 100vh; padding:0;
+    
+    @include mq(0, $mq-medium) {
+      width: 100%;
+      padding-top: toRem(60);
+      // height: calc(100vh - toRem(64));
+    }
+
+    .contentColWrapper{padding: toRem(24);
+      @include mq(0, $mq-medium){
+        padding: toRem(16);
+      }
+
+      // Heading Columns [Start]
+      .headingCols{margin: 0 0 toRem(24);
+         h2{line-height: normal;
+          
+          .badge{
+            @extend .position-relative; top: toRem(-9);
+            @include mq(0, $mq-medium){
+              top: toRem(-4);
+            }
+          }
+          .badgeIcon{
+            @extend .position-relative; top: toRem(-3);
+            @include mq(0, $mq-medium){
+              top: toRem(-4);
+            }
+          }
+        
+        }
+
+        @media screen and (max-width: 1024px) {
+          &{flex-direction: column !important;}
+        > .slds-col{
+            width: 100%;
+          }
+        }
+
+        @media only screen and (min-width:1024px ) and ( max-width: 1800px ){
+          > .slds-col{
+            &:first-of-type{
+              width: unset;
+              flex: 1;
+            }
+            &:last-of-type{
+              width: unset;
+            }
+          }
+        }
+      }
+      // Heading Columns [Start]
+
+      &.pageBottomSpacing{padding-bottom: toRem(60);}
+
+      .fullSection{
+        @media screen and (min-width: $mq-medium) {
+          margin-left: toRem(-24); margin-right: toRem(-24);
+        }
+      }
+    }
+
+    .slds-notify.topAlert {border-radius: toRem(4); padding: toRem(17);
+      .btn{
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+// Main Layout [END]

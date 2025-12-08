@@ -1,0 +1,65 @@
+// SideBar [Start]
+.sidebar{
+  background: $gray-100; height: 100%; min-height: 100vh; padding:toRem(30); min-height: 100vh; overflow: auto; box-shadow: 0 toRem(4) toRem(4) 0 rgba($black, 0.25); position: relative; overflow: auto;
+  @extend .trans-6;
+
+  @include mq(0, $mq-medium) {
+    width: 100%;
+    min-width: toRem(280);
+    max-width: toRem(330);
+    padding: toRem(25);
+    box-shadow: 0px 132px 37px 0px rgba(0, 0, 0, 0.00), 0px 84px 34px 0px rgba(0, 0, 0, 0.01), 0px 47px 28px 0px rgba(0, 0, 0, 0.05), 0px 21px 21px 0px rgba(0, 0, 0, 0.09), 0px 5px 12px 0px rgba(0, 0, 0, 0.10);
+    position: fixed;
+    top: 0;
+    left: -120vw;
+    z-index: $z-index-dropdown;
+
+    // when sidebar open
+    &-open{left:0;}
+  }
+
+  .logo{max-width: toRem(156);}
+  .provider-logo{max-width: toRem(184);}
+  .userinfoTile{border-top:toRem(1) $gray-600 solid;
+    .avatar{
+      background:$secondary; width: toRem(32);height: toRem(32); margin-right: toRem(12); display: flex; justify-content: center; align-items: center; border-radius: 50%; overflow: hidden;
+
+      svg{width: 95%; height: 95%;}
+    }
+  }
+  .mainNavigation{overflow: auto;
+    a{color:$bfcolor; text-decoration: none;}
+
+    .parent-link{
+      > div{background:$gray-350; color:$bfcolor; font-size: toRem(14); font-weight: $font-weight-semibold; padding: toRem(7) toRem(10); margin: toRem(4) 0; border-radius: toRem(4); display:flex; align-items: center; gap: toRem(8);
+        @extend .trans-3;
+      }
+
+      //hover / active
+      // &:hover > a, & > a.active{
+      //   background: rgba($secondary, 1); color:map-get($bt-primary, 100);
+      // }
+      
+    }
+    .subChildNav{padding:toRem(6) 0 toRem(6) toRem(18); margin:0;
+      > a{color:$bfcolor; font-size:toRem(12); padding: toRem(7) toRem(10) toRem(7) toRem(30); border-left: toRem(3) solid $gray-375; display:flex; align-items: center; position: relative;
+        
+        &, *{transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
+
+        .icon {width: toRem(14); @extend .filter-grey-750; position: absolute; left: toRem(9); top: toRem(7);}
+
+        //hover / active
+        &:hover, &.active{
+          color:map-get($bt-primary, 100); font-weight:$font-weight-bold; border-left-color:$secondary;
+
+          .icon{@extend .filter-primary-100;}
+        }
+      }
+    }
+  }
+}
+.mblMainHeader {
+  background: $white; width: 100%; position: fixed; top:0; left:0; z-index:500;
+  .btn-helpCircle{background: transparent; padding:0;}
+}
+// SideBar [END]

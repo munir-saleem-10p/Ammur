@@ -1,0 +1,8 @@
+// help tooltip
+.customInfo{display: flex !important;
+  lightning-helptext{
+    .slds-button{
+      @extend .filter-primary-100;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/* Buttons [Start] */
+.btn{color:$button-font-color; padding: $button-padding; border: 0; border-radius: $button-border-radius; line-height: $button-line-height; font-weight: $button-font-weight; 
+  /* box-shadow: 0 toRem(22) toRem(6) 0 rgba($black, 0.00), 0 toRem(14) toRem(6) 0 rgba($black, 0.01), 0 toRem(8) toRem(5) 0 rgba($black, 0.05), 0 toRem(4) toRem(4) 0 rgba($black, 0.09), 0 toRem(1) toRem(2) 0 rgba($black, 0.10); */
+
+  &:disabled{
+    background: $button-disabled-bg; color: $button-disabled-font-color;
+  }
+  //primary
+  &.btn-primary{
+    background: $button-primary-bg; color: $button-primary-font-color;
+
+    // hover / active
+    &:hover, &:active, &.active{
+      background: $button-primary-bg-hover !important;
+    }
+  }
+  //secondary
+  &.btn-secondary{
+    background: $button-secondary-bg; color: $button-secondary-font-color;
+
+    &:hover, &:active, &.active{
+      background: $button-secondary-bg-hover !important;
+    }
+  }
+
+  &.btn-disabled, &:disabled{
+    &, &:hover, &:active, &.active{
+    background: $gray-375 !important; color: $gray-400 !important; pointer-events: none;
+    }
+  }
+
+  // button-text
+  &.btn-text{
+    background: none; border: none; box-shadow: none;
+  }
+}
+
+.btn-icon{background: none; border: none; box-shadow: none;}
+/* Buttons [END] */
