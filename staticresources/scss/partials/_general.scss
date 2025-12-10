@@ -181,17 +181,18 @@ filter: invert(70%) sepia(57%) saturate(456%) hue-rotate(117deg) brightness(95%)
 }
 
 .filter-grey-300{
-filter: invert(93%) sepia(3%) saturate(121%) hue-rotate(335deg) brightness(95%) contrast(92%);
+  filter: invert(93%) sepia(3%) saturate(121%) hue-rotate(335deg) brightness(95%) contrast(92%);
 }
 
 .filter-grey-750{
 // #424242
-filter: invert(23%) sepia(82%) saturate(0%) hue-rotate(181deg) brightness(89%) contrast(93%); 
+filter: invert(23%) sepia(82%) saturate(0%) hue-rotate(181deg) brightness(89%) contrast(93%);
 }
 .filter-grey-600{
 // #868686
-filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(96%) contrast(89%); 
+filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(96%) contrast(89%);
 }
+
 
 // transition
 .trans-2,
