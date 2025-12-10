@@ -1,0 +1,5 @@
+.customCard{
+    .slds-card__header-title{
+        @extend %pageheader;
+    }
+}

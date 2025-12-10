@@ -25,12 +25,7 @@
 
     // button
     .slds-accordion__summary-action {
-      background-color: $gray-100;
-      padding: toRem(16);
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 0;
-      min-height: toRem(52);
+      @extend %pageheader;
 
       &[aria-expanded="false"] {
         lightning-primitive-icon{
@@ -39,9 +34,7 @@
           }
         }
         .ico-expcol{
-          .amr-icon{
             transform: rotate(90deg);
-          }
         }
       }
 
@@ -369,16 +362,6 @@
       border: unset !important;
       padding: toRem(16) 0 0 0 !important;
       margin-bottom: 0 !important;
-
-      .itemList {
-        border-bottom: toRem(1) $gray-375 solid;
-        @extend .p-16px;
-
-        &:last-of-type {
-          padding-bottom: 0;
-          border-bottom: unset;
-        }
-      }
     }
 
     .slds-accordion__list-item {
