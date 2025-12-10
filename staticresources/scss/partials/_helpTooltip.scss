@@ -1,8 +1,14 @@
 // help tooltip
-.customInfo{display: flex !important;
-  lightning-helptext{
-    .slds-button{
-      @extend .filter-primary-100;
+.customInfo{
+ 
+  &.primaryTooltip{
+    lightning-helptext{
+      .slds-button{
+        @extend .filter-primary-100;
+      }
+      .slds-form-element__icon {
+        padding: 0;
+      }
     }
   }
 }
