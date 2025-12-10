@@ -302,7 +302,7 @@ $input-file-dropZone-border: toRem(1) dashed $gray-375;
 $button-font-family: $bffamily;
 $button-font-color: $gray-900;
 $button-font-size: $bfsize;
-$button-font-weight: $font-weight-semibold;
+$button-font-weight: $font-weight-bold;
 $button-line-height: normal;
 $button-padding: toRem(8) toRem(16);
 // $button-padding-mobile: toRem(6) rem(12);
@@ -317,7 +317,7 @@ $button-disabled-font-color: color.adjust($gray-600, $lightness: -10%);
 $button-link-font-color: map.get($bt-primary, 100);
 $button-link-hover-font-color: color.adjust(map.get($bt-primary, 100), $lightness: -10%);
 // primary
-$button-primary-font-color: $white;
+$button-primary-font-color: map.get($bt-secondary, 100);
 $button-primary-bg: map.get($bt-primary, 100);
 $button-primary-bg-hover: color.adjust(map.get($bt-primary, 100), $lightness: -10%);
 $button-primary-bg-active: $button-primary-bg-hover;
