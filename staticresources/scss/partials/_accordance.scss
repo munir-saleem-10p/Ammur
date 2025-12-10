@@ -33,8 +33,13 @@
       min-height: toRem(52);
 
       &[aria-expanded="false"] {
-        lightning-primitive-icon {
+        lightning-primitive-icon{
           .slds-button__icon {
+            transform: rotate(90deg);
+          }
+        }
+        .ico-expcol{
+          .amr-icon{
             transform: rotate(90deg);
           }
         }
@@ -137,6 +142,16 @@
       }
     }
 
+    &.icoNote {
+      .slds-accordion__summary-content {
+        &:before {
+          content: '';
+          background: $icoNote no-repeat center center transparent;
+          @include square(toRem(24));
+        }
+      }
+    }
+
 
     //no icon
     &.noIcon .slds-accordion__summary-content {
@@ -224,7 +239,7 @@
 
           .slds-accordion__summary-content:before,
           .slds-button__icon {
-            @extend .filter-grey-600;
+            // @extend .filter-grey-600;
           }
 
           .slds-accordion__summary-content:after {
@@ -334,7 +349,7 @@
 
           .slds-accordion__summary-content:before,
           .slds-button__icon {
-            @extend .filter-grey-600;
+            // @extend .filter-grey-600;
           }
 
           .slds-accordion__summary-content:after {
