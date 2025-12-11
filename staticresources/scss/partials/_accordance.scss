@@ -23,6 +23,8 @@
     padding: 0;
     margin: 0;
 
+    .slds-accordion__summary-heading{margin-right: 0 !important;}
+
     // button
     .slds-accordion__summary-action {
       @extend %pageheader;
