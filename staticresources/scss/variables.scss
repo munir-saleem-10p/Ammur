@@ -50,11 +50,11 @@ $gray-200: #F0F4F0; //
 $gray-300: #DDDBDA; //input bg
 $gray-350: #E7E7E7; // nav bg
 $gray-375: #D7D7D7; // nav left border
-$gray-400: #5B5B5B; // mid grey
+$gray-400: #C9C9C9; // mid grey
 $gray-500: #6B6B6B; // placeholder color
 $gray-600: #868686; // UI Accent
-$gray-700: #495057;
-$gray-750: #424242; // Gray_02/90
+$gray-700: #505050;
+$gray-750: #444; // Gray_02/90
 $gray-800: #121212; //label color
 $gray-900: #080707; // Text
 $black: #000;
@@ -332,18 +332,22 @@ $button-secondary-focus: $button-secondary-bg-hover;
 
 
 // outline primary
-$button-outline-font-color: map.get($bt-primary, 100);
-$button-outline-bg: transparent;
-$button-outline-font-color-hover: $white;
-$button-outline-bg-hover: map.get($bt-primary, 100);
-$button-outline-border: map.get($bt-primary, 100);
+$button-outline-primary-font-color: map.get($bt-primary, 100);
+$button-outline-primary-bg: transparent;
+$button-outline-primary-font-color-hover: $white;
+$button-outline-primary-bg-hover: map.get($bt-primary, 100);
+$button-outline-primary-border: map.get($bt-primary, 100);
+$button-outline-primary-focus: $button-outline-primary-bg-hover;
+
 
 // outline secondary
-$button-outline-font-color: map.get($bt-secondary, 100);
-$button-outline-bg: transparent;
-$button-outline-font-color-hover: map.get($bt-primary, 100);
-$button-outline-bg-hover: map.get($bt-secondary, 100);
-$button-outline-border: map.get($bt-secondary, 100);
+$button-outline-secondary-font-color: map.get($bt-secondary, 100);
+$button-outline-secondary-bg: transparent;
+$button-outline-secondary-font-color-hover: map.get($bt-primary, 100);
+$button-outline-secondary-bg-hover: map.get($bt-secondary, 100);
+$button-outline-secondary-border: map.get($bt-secondary, 100);
+$button-outline-secondary-focus: $button-outline-secondary-bg-hover;
+
 // button [END]
 
 // Alert Box
