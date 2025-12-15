@@ -643,6 +643,10 @@
     .h-#{$width}px {
       height: toRem($width) !important;
     }
+
+    .m-h-#{$width}px {
+      min-height: toRem($width) !important;
+    }
   }
 
   // for laptop

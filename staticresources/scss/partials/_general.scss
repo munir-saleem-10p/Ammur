@@ -194,6 +194,7 @@ filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(96%) co
 }
 
 
+
 // transition
 .trans-2,
 .trans-2all,
@@ -436,3 +437,10 @@ input::-ms-clear {
   }
 }
 // General Content Styling [END]
+
+
+.nasaCRM {
+  .slds-box {
+    @extend .border-gray-300;
+  }
+}

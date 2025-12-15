@@ -36,7 +36,7 @@
           }
         }
         .ico-expcol{
-            transform: rotate(90deg);
+            transform: rotate(0deg);
         }
       }
 
@@ -49,6 +49,9 @@
           .slds-button__icon {
             transform: rotate(180deg);
           }
+        }
+        .ico-expcol{
+            transform: rotate(180deg);
         }
       }
 
