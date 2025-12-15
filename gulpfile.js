@@ -10,8 +10,8 @@ const paths = {
   watch: "./staticresources/scss/**/*.scss",
   
   output: {
-    "poc": "./../nasa/NASA-POC/force-app/main/default/staticresources/Nasa_assets/css",
-    "dev": "./../nasa/NASA-DEV/force-app/main/default/staticresources/Nasa_assets/css",
+    "poc": "./../nasa/NASA-POC/force-app/main/default/staticresources/NasaAssets/css",
+    "dev": "./../nasa/NASA-DEV/force-app/main/default/staticresources/NasaAssets/css",
   },
 };
 

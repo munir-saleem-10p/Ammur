@@ -191,7 +191,7 @@
   // content
   .slds-accordion__content {
     padding: 0;
-    margin: 0 0 toRem(20);
+    margin: 0;
   }
 
 
@@ -256,16 +256,6 @@
       @extend .px-16px;
       @extend .pb-16px;
       margin-bottom: 0;
-
-      .itemList {
-        border-bottom: toRem(1) $gray-375 solid;
-        @extend .p-16px;
-
-        &:last-of-type {
-          padding-bottom: 0;
-          border-bottom: unset;
-        }
-      }
     }
 
     .slds-accordion__list-item {
