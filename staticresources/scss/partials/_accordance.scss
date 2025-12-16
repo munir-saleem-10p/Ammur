@@ -152,6 +152,15 @@
       }
     }
 
+    &.icoIndustry {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image:$icoIndustry;
+        }
+      }
+    }
+
 
     //no icon
     &.noIcon .slds-accordion__summary-content {
