@@ -59,7 +59,7 @@ $icoCreditCard: url("./../images/ico-creditCard.svg");
 $icoBank: url("./../images/ico-bank.svg");
 $icoNotes: url("./../images/ico-notes.svg");
 $icoHistory: url("./../images/ico-history.svg");
-$icoNote: url("./../images/ico-note.svg");
+$icoNote: url("./../images/ico-notes.svg");
 
 $icons: (
   "icoEye" : $icoEye,
@@ -121,6 +121,6 @@ $icons: (
   "icoCreditCard" : $icoCreditCard,
   "icoBank" : $icoBank,
   "icoNotes" : $icoNotes,
-  "icoHistory" : $icoHistory,
-  "icoNote" : $icoNote
+  // "icoHistory" : $icoHistory,
+  // "icoNote" : $icoNote
 );

@@ -130,12 +130,15 @@
       }
     }
     
+
+    // multicolor svg extend
+    %beforeBgNoRepeat{content: ''; background: no-repeat center center transparent; @include square(toRem(24));}
+
     &.icoHistory {
       .slds-accordion__summary-content {
         &:before {
-          content: '';
-          background: $icoHistory no-repeat center center transparent;
-          @include square(toRem(24));
+          @extend %beforeBgNoRepeat;
+          background-image: $icoHistory;
         }
       }
     }
@@ -143,9 +146,8 @@
     &.icoNote {
       .slds-accordion__summary-content {
         &:before {
-          content: '';
-          background: $icoNote no-repeat center center transparent;
-          @include square(toRem(24));
+          @extend %beforeBgNoRepeat;
+          background-image:$icoNote;
         }
       }
     }
