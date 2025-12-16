@@ -4,6 +4,12 @@
   .slds-form-element__label{font-weight: bold;}
 }
 
+.slds-form-element{
+  // no label
+  &.nolabel{
+    .slds-form-element__label{display: none;}
+  }
+}
 
 // File upload with drag and drop
 .fileUploaderWrapper {
