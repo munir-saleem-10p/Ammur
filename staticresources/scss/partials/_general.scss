@@ -443,4 +443,7 @@ input::-ms-clear {
   .slds-box {
     @extend .border-gray-300;
   }
+  .slds-text-link {
+    @extend .text-link;
+  }
 }
