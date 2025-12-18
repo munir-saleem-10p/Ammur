@@ -161,6 +161,15 @@
       }
     }
 
+    &.icoOnlineBusiness {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image:$icoOnlineBusiness;
+        }
+      }
+    }
+
 
     //no icon
     &.noIcon .slds-accordion__summary-content {
