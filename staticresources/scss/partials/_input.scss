@@ -1,7 +1,37 @@
 @use "sass:map";
 /* Input [Start] */
-.amu-output-fld{
+.amr-output-fld{
+  padding: $input-padding !important;
   .slds-form-element__label{font-weight: bold;}
+
+  a{@extend .text-link;}
+
+  .slds-icon-utility-check, .slds-icon-utility-steps {
+    @extend .border-gray-500;
+    @include square(16px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+      @include square(10px);
+      @extend .filter-primary-100;
+      transform: translateY(-2px);
+    }
+  }
+  .slds-icon-utility-steps{
+    svg{opacity: 0;}
+  }
+}
+
+.amr-input-fld{
+  .slds-form-element__control{
+    .slds-input{
+      padding-left: var(--slds-c-input-spacing-inline-start, var(--slds-c-input-spacing-horizontal-start, var(--sds-c-input-spacing-horizontal-start, var(--lwc-spacingSmall,0.75rem))));
+      padding-right: var(--slds-c-input-spacing-inline-start, var(--slds-c-input-spacing-horizontal-start, var(--sds-c-input-spacing-horizontal-start, var(--lwc-spacingSmall,0.75rem))));
+    }
+  }
 }
 
 .slds-form-element{
