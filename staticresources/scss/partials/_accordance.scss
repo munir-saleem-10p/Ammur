@@ -23,7 +23,8 @@
     padding: 0;
     margin: 0;
 
-    .slds-accordion__summary-heading{margin-right: 0 !important;}
+    .slds-accordion__summary-heading{margin-right: 0 !important;
+    }
 
     // button
     .slds-accordion__summary-action {
@@ -166,6 +167,15 @@
         &:before {
           @extend %beforeBgNoRepeat;
           background-image:$icoOnlineBusiness;
+        }
+      }
+    }
+
+    &.icoCradit {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoCradit;
         }
       }
     }
@@ -389,6 +399,19 @@
           }
         }
       }
+    }
+  }
+
+  &.badgeVariant {
+    .slds-accordion__summary-heading{
+      height: 54px;
+      .slds-accordion__content {
+        @extend .overflow-visible;
+      }
+    }
+
+    .border-bottom-2 {
+      border-bottom: toRem(2) solid #4E890E !important;
     }
   }
 }

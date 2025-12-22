@@ -1,8 +1,47 @@
 // Badge [Start]
-.badge {background-color: $badge-default-bg; color: $badge-default-color; font-size: $badge-font-size; font-weight: $badge-font-weight; line-height: normal; padding: $badge-padding; border-radius: $badge-border-radius; 
+@use "sass:map";
+.badge {
+  background-color: $badge-default-bg;
+  color: $badge-default-color;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  // line-height: normal;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
 
   // badges generator
   // @include badge-variants;
 
+  .badge-dot {
+    width: toRem(6);
+    height: toRem(6);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: toRem(10);
+  }
+
+  &.success {
+    background-color: map.get($bt-tertiary, 300);
+    .badge-dot {
+      background-color: map.get($bt-tertiary, 600);
+    }
+  }
+  &.warning {
+    background-color: map.get($bt-tertiary, 400); 
+    .badge-dot {
+      background-color: map.get($bt-tertiary, 700); 
+    }
+  }
+  &.error {
+    background-color: map.get($bt-tertiary, 500); 
+    .badge-dot {
+      background-color: map.get($bt-tertiary, 800); 
+    }
+  }
+
+  &.alignment-right {
+    margin-left: auto;
+    @extend .mr-10px;
+  }
 }
 // Badge [END]

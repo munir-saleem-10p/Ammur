@@ -21,6 +21,12 @@ $bt-secondary: (
 $bt-tertiary: (
   100: #E6F4D3,
   200: #D4F3ED,
+  300: #CEFF9A,
+  400: #FFFFC6,
+  500: #FFDED7,
+  600: #0DC44A,
+  700: #FCE460,
+  800: #E14526,
   // 300: color.adjust(#2c3785, $lightness: 75%),
   // 400: color.adjust(#2c3785, $lightness: 50%),
   // 500: color.adjust(#2c3785, $lightness: 25%),
@@ -79,6 +85,7 @@ $brown: #ba6747;
 $darkbrown: #45230e;
 $inkblue: #2f3bc1;
 $dodgerBlue: #0085ff;
+$darkYellow: #B89C00;
 
 // Theme color Variables [Start]
 $primary: map.get($bt-primary, 100);
@@ -122,9 +129,12 @@ $theme-colors: (
   // theme tertiary set
   "bt-tertiary-100": map.get($bt-tertiary, 100),
   "bt-tertiary-200": map.get($bt-tertiary, 200),
-  // "bt-tertiary-300": map.get($bt-tertiary, 300),
-  // "bt-tertiary-400": map.get($bt-tertiary, 400),
-  // "bt-tertiary-500": map.get($bt-tertiary, 500),
+  "bt-tertiary-300": map.get($bt-tertiary, 300),
+  "bt-tertiary-400": map.get($bt-tertiary, 400),
+  "bt-tertiary-500": map.get($bt-tertiary, 500),
+  "bt-tertiary-600": map.get($bt-tertiary, 600),
+  "bt-tertiary-700": map.get($bt-tertiary, 700),
+  "bt-tertiary-800": map.get($bt-tertiary, 800),
 
   // theme accent set
   // "bt-accent-50": map.get($bt-accent, 100),
@@ -158,6 +168,7 @@ $theme-colors: (
   "orange": $orange,
   "yellow": $yellow,
   "green": $green,
+  "darkYellow": $darkYellow,
   // "indigo": $indigo,
   // "purple": $purple,
   // "pink": $pink,
@@ -414,8 +425,8 @@ $contentCol-width: calc(100vw - ($sidebarCol-width - toRem(8)));
 $badge-font-size: toRem(12);
 $badge-font-weight: $font-weight-medium;
 $badge-lineheight: "130%";
-$badge-padding: toRem(2) toRem(8);
-$badge-border-radius: toRem(50);
+$badge-padding: toRem(6) toRem(12);
+$badge-border-radius: toRem(6);
 $badge-default-bg: $gray-100;
 $badge-default-color: $gray-900;
 
