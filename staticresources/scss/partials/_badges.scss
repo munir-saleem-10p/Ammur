@@ -25,17 +25,26 @@
     .badge-dot {
       background-color: map.get($bt-tertiary, 600);
     }
+    &.highlight {
+      border:1px solid map.get($bt-tertiary, 600);
+    }
   }
   &.warning {
     background-color: map.get($bt-tertiary, 400); 
     .badge-dot {
       background-color: map.get($bt-tertiary, 700); 
     }
+    &.highlight {
+      border:1px solid map.get($bt-tertiary, 700);
+    }
   }
   &.error {
     background-color: map.get($bt-tertiary, 500); 
     .badge-dot {
       background-color: map.get($bt-tertiary, 800); 
+    }
+    &.highlight {
+      border:1px solid map.get($bt-tertiary, 800);
     }
   }
 
