@@ -91,13 +91,16 @@
 
     .btn-#{$name} {
       background-color: $value !important;
+      color: color.scale($value, $lightness: -70%);
 
       &:hover {
         background-color: color.adjust($value, $lightness: -30%);
+        color: color.scale($value, $lightness: -70%);
       }
 
       &.active {
         background-color: color.adjust($value, $lightness: -20%);
+        color: color.scale($value, $lightness: -70%);
       }
     }
 

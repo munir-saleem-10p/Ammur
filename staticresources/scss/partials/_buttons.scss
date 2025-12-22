@@ -12,6 +12,7 @@
     // hover / active
     &:hover, &:active, &.active{
       background: $button-primary-bg-hover !important;
+      color:$button-font-color;
     }
   }
   //secondary
@@ -20,6 +21,7 @@
 
     &:hover, &:active, &.active{
       background: $button-secondary-bg-hover !important;
+      color: $button-secondary-font-color;
     }
   }
 
