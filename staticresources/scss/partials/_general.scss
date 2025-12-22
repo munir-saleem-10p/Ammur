@@ -440,6 +440,9 @@ input::-ms-clear {
 
 
 .nasaCRM {
+  .slds-template_default{background-color: #DDDBDA; height: auto; min-height: 100vh;}
+
+
   .slds-box {
     @extend .border-gray-300;
   }

@@ -26,10 +26,18 @@
 }
 
 .amr-input-fld{
-  .slds-form-element__control{
-    .slds-input{
-      padding-left: var(--slds-c-input-spacing-inline-start, var(--slds-c-input-spacing-horizontal-start, var(--sds-c-input-spacing-horizontal-start, var(--lwc-spacingSmall,0.75rem))));
-      padding-right: var(--slds-c-input-spacing-inline-start, var(--slds-c-input-spacing-horizontal-start, var(--sds-c-input-spacing-horizontal-start, var(--lwc-spacingSmall,0.75rem))));
+  .slds-input:not(.slds-combobox__input){
+    padding-left: toRem(8);
+    padding-right: toRem(8);
+  }
+  .slds-textarea{min-height: toRem(32) !important; font-size: var(--lwc-fontSize3, 0.8125rem); padding-left: toRem(8) !important; padding-right: toRem(8) !important;}
+}
+
+.slds-size_1-of-1.amr-fulCol-fld{
+  @media (min-width: 48em) {
+    .slds-form-element_horizontal .slds-form-element__control, .slds-form_horizontal .slds-form-element .slds-form-element__control, .slds-form_stacked .slds-form-element_horizontal .slds-form-element__control {
+      padding-left: 15.5%;
+      margin-top: 3px;
     }
   }
 }
