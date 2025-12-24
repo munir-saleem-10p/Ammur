@@ -1,5 +1,5 @@
 .simpleTabs{
-    .slds-tabs_default__nav{justify-content: center; border-bottom-color: $gray-300;
+    .slds-tabs_default__nav{
         @include mq(0, $mq-medium){
             flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; padding-bottom: toRem(10); 
         }
@@ -48,6 +48,16 @@
                     background: $primary;
                 }
             }
+        }
+    }
+
+    &.mainTabs{
+        .slds-tabs_default__nav{
+            justify-content: center; margin-bottom: toRem(16); border-bottom-color:$gray-300;
+            
+            // &::before{
+            //     content: ''; background-color: $gray-300; width: 100vw; height: toRem(16); display: block; position: absolute; bottom: 0; left: toRem(-32);
+            // }
         }
     }
 }

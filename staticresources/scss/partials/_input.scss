@@ -55,6 +55,7 @@
     .slds-form-element_horizontal .slds-form-element__control, .slds-form_horizontal .slds-form-element .slds-form-element__control, .slds-form_stacked .slds-form-element_horizontal .slds-form-element__control {
       padding-left: 15.5%;
       margin-top: 3px;
+      max-width: calc(33% - var(--lwc-squareIconUtilityMedium, 1.25rem));
     }
   }
 }

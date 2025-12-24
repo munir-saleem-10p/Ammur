@@ -18,7 +18,7 @@
   &:hover{color: $link-hover-color; text-decoration: $link-hover-decoration;}
 }
 
-.text-link-all, .text-link-all *{color:$link-color !important; text-decoration: $link-decoration !important;
+.text-link-all, .text-link-all a{color:$link-color !important; text-decoration: $link-decoration !important;
   &:hover{color: $link-hover-color !important; text-decoration: $link-hover-decoration !important;}
 }
 
@@ -442,9 +442,10 @@ input::-ms-clear {
 }
 // General Content Styling [END]
 
-
+// Nasa CRM
 .nasaCRM {
-  .slds-template_default{background-color: #DDDBDA; height: auto; min-height: 100vh;}
+  .slds-template_default{background-color: $gray-300; height: auto; min-height: 100vh;}
+  
   .highlights {
     .slds-button{color:$secondary; border-color: $gray-300;}
     .slds-page-header__detail-block{
@@ -453,6 +454,10 @@ input::-ms-clear {
   }
 
   .nasaAppWrapper{
+    > .slds-card > .slds-card__body{
+      margin-top: 0
+    }
+
     .slds-box {
       @extend .border-gray-300;
     }
