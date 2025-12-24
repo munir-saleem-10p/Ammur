@@ -92,9 +92,9 @@ $primary: map.get($bt-primary, 100);
 $secondary: map.get($bt-secondary, 100);
 
 $success: map.get($bt-primary, 100);
-$info: map.get($bt-primary, 100);
-$warning: $yellow;
-$danger: $rust !default;
+$info: $blue;
+$warning: $darkYellow;
+$danger: map.get($bt-tertiary, 800) !default;
 
 $light: $gray-200 !default;
 $dark: $gray-900 !default;
@@ -194,7 +194,7 @@ $primary-font-family: "Galano Grotesque", sans-serif;
 // $secondary-font-family: #{$lato}, sans-serif;
 
 // Typography
-$font-size-base: toRem(16); //bootstrap 5 overwrite
+$font-size-base: $var-font-size-3; //bootstrap 5 overwrite
 $bfsize: $font-size-base; //alias
 $bfweight: normal;
 $bfcolor: $gray-900;

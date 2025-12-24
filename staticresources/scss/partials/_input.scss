@@ -1,5 +1,22 @@
 @use "sass:map";
 /* Input [Start] */
+
+.error .amr-output-fld .slds-form-element__static{
+    color: $danger; font-weight: $font-weight-bold;
+}
+
+.warning .amr-output-fld .slds-form-element__static{
+    color: $warning; font-weight: $font-weight-bold;
+}
+
+.info .amr-output-fld .slds-form-element__static{
+    color: $info; font-weight: $font-weight-bold;
+}
+
+.success .amr-output-fld .slds-form-element__static{
+    color: $success; font-weight: $font-weight-bold;
+}
+
 .amr-output-fld{
   padding: $input-padding !important;
   .slds-form-element__label{font-weight: bold;}

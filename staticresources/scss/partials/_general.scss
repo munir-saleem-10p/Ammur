@@ -18,6 +18,10 @@
   &:hover{color: $link-hover-color; text-decoration: $link-hover-decoration;}
 }
 
+.text-link-all, .text-link-all *{color:$link-color !important; text-decoration: $link-decoration !important;
+  &:hover{color: $link-hover-color !important; text-decoration: $link-hover-decoration !important;}
+}
+
 .text-decoration{
   &-none{text-decoration: none !important;}
   &-underline{text-decoration: underline !important;}
@@ -441,12 +445,19 @@ input::-ms-clear {
 
 .nasaCRM {
   .slds-template_default{background-color: #DDDBDA; height: auto; min-height: 100vh;}
-
-
-  .slds-box {
-    @extend .border-gray-300;
+  .highlights {
+    .slds-button{color:$secondary; border-color: $gray-300;}
+    .slds-page-header__detail-block{
+      p:nth-child(2){font-weight: $font-weight-bold;}
+    }
   }
-  .slds-text-link {
-    @extend .text-link;
+
+  .nasaAppWrapper{
+    .slds-box {
+      @extend .border-gray-300;
+    }
+    .slds-text-link {
+      @extend .text-link;
+    }
   }
 }
