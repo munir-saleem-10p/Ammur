@@ -135,6 +135,13 @@
     // .bg-darkmode-#{$name} {
     //   background-color: $value !important;
     // }
+
+    // icon
+    .action-#{$name}{
+      &.slds-icon_container{
+        background-color: #{$value};
+      }
+    }
   }
 }
 

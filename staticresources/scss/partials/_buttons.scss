@@ -41,7 +41,7 @@
 /* Buttons [END] */
 
 /* Neutral button */
-.nasaCRM{
+.nasaCRM .nasaAppWrapper{
 lightning-button .slds-button_neutral {
   @include custom-brand-button(#f3f3f3, #e0e0e0, #cccccc);
   color: #000;
