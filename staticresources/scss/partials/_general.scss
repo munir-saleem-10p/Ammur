@@ -454,6 +454,17 @@ input::-ms-clear {
   }
 
   .nasaAppWrapper{
+
+    @media screen and (min-width: 2200px) {
+      .mainSectionLeft{
+        width: calc(55vw - 30px) !important;
+      }
+      .mainSectionRight{
+        width: calc(45vw - 30px) !important;
+      }
+    }
+
+
     > .slds-card > .slds-card__body{
       margin-top: 0
     }

@@ -144,6 +144,15 @@
       }
     }
 
+    &.granterlookup.icoHistory {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoHistory;
+        }
+      }
+    }
+
     &.icoNote {
       .slds-accordion__summary-content {
         &:before {
@@ -176,6 +185,88 @@
         &:before {
           @extend %beforeBgNoRepeat;
           background-image: $icoCradit;
+        }
+      }
+    }
+
+
+    &.icoLead {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoLead;
+        }
+      }
+    }
+
+    &.icoSearchBox {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoSearchBox;
+        }
+      }
+    }
+
+    &.icoNotesStar {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoNotesStar;
+        }
+      }
+    }
+
+    &.icoAccountInfo {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoAccountInfo;
+        }
+      }
+    }
+
+    &.icoSettingsList {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoSettingsList;
+        }
+      }
+    }
+
+    &.icoClear {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoClear;
+        }
+      }
+    }
+
+    &.icoAdditional {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoAdditional;
+        }
+      }
+    }
+
+    &.icoClipboardCheck {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoClipboardCheck;
+        }
+      }
+    }
+
+    &.icoCrown {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoCrown;
         }
       }
     }
