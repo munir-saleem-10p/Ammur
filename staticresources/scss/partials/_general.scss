@@ -453,6 +453,14 @@ input::-ms-clear {
     }
   }
 
+  .slds-box {
+    @extend .border-gray-300;
+
+    &.border-none{
+      border: none !important;
+    }
+  }
+
   .nasaAppWrapper{
 
     @media screen and (min-width: 2200px) {
@@ -477,3 +485,10 @@ input::-ms-clear {
     }
   }
 }
+
+
+
+// DC Container Fix
+
+
+// DC Container Fix [END]

@@ -47,6 +47,15 @@
       border:1px solid map.get($bt-tertiary, 800);
     }
   }
+  &.disabled {
+    background-color: map.get($bt-tertiary, 900); 
+    .badge-dot {
+      background-color: map.get($bt-tertiary, 850); 
+    }
+    &.highlight {
+      border:1px solid map.get($bt-tertiary, 850);
+    }
+  }
 
   &.alignment-right {
     margin-left: auto;
