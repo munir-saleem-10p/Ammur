@@ -27,6 +27,8 @@ $bt-tertiary: (
   600: #0DC44A,
   700: #FCE460,
   800: #E14526,
+  850: #C9C9C9,
+  900: #c9c9c999,
   // 300: color.adjust(#2c3785, $lightness: 75%),
   // 400: color.adjust(#2c3785, $lightness: 50%),
   // 500: color.adjust(#2c3785, $lightness: 25%),
@@ -135,6 +137,8 @@ $theme-colors: (
   "bt-tertiary-600": map.get($bt-tertiary, 600),
   "bt-tertiary-700": map.get($bt-tertiary, 700),
   "bt-tertiary-800": map.get($bt-tertiary, 800),
+  "bt-tertiary-850": map.get($bt-tertiary, 850),
+  "bt-tertiary-900": map.get($bt-tertiary, 900),
 
   // theme accent set
   // "bt-accent-50": map.get($bt-accent, 100),
