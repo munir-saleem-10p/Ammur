@@ -489,6 +489,12 @@ input::-ms-clear {
 
 
 // DC Container Fix
-
+.dcContainerCol {
+  .whiteBarAccordance {
+     &.slds-p-left--small {
+       padding-left: toRem(0) !important;    
+     }
+  }
+}
 
 // DC Container Fix [END]

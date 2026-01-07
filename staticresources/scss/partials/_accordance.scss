@@ -294,6 +294,131 @@
       @extend .border-gray-300;
       @extend .brd-4;
       @extend .p-16px;
+      
+      &.sectionError {
+        border-color: $red !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $red !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $red !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $green !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $orange !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $blue !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionSuccess {
+        border-color: $green !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $green !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $red !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $green !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $orange !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $blue !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionWarning {
+        border-color: $orange !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $orange !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $red !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $green !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $orange !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $blue !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionInfo {
+        border-color: $blue !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $blue !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $red !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $green !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $orange !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $blue !important; 
+            border-width: 2px;
+          } 
+        }
+      }
     }
 
     //status
