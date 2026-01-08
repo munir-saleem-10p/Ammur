@@ -22,15 +22,6 @@
     padding: 0;
     margin: 0;
 
-    .slds-accordion__summary-heading {
-      margin-right: 0 !important;
-
-      .icoSFArrowdown {
-        color: $gray-900;
-        font-size: toRem(16);
-      }
-    }
-
     // button
     .slds-accordion__summary-action {
       @extend %pageheader;
@@ -70,7 +61,12 @@
           @extend .trans-3;
         }
       }
-
+      
+      .icoSFArrowdown {
+        color: $gray-900 !important;
+        font-size: toRem(16) !important;
+      }
+      
       //button title
       .slds-accordion__summary-content {
         color: $bfcolor;
@@ -93,11 +89,13 @@
           -webkit-mask-position: center center;
           mask-position: center center;
         }
+
+
       }
 
       //hover
       &:hover {
-        background: color.scale($gray-100, $lightness: -4%) !important;
+        background: color.scale($gray-100, $lightness: -4%) !important; color: $gray-900 !important;
       }
     }
   }
@@ -299,13 +297,17 @@
       @extend .border-gray-300;
       @extend .brd-4;
       @extend .p-16px;
-      
-      &.sectionError {
-        border-color: $danger !important;
+
+      &.sectionError,
+      &.sectionSuccess,
+      &.sectionWarning,
+      &.sectionInfo{
         .slds-accordion__summary-heading {
-          border: toRem(1) solid $danger !important; 
+          border-width: toRem(1);
+          border-style: solid; 
           border-radius: 3px;
         }
+
         .error {
           .slds-border_bottom {
             border-color: $danger !important;
@@ -329,129 +331,57 @@
             border-color: $info !important; 
             border-width: 2px;
           } 
+        }
+      }
+      
+      &.sectionError {
+        &, .slds-accordion__summary-heading {
+          border-color: $danger !important; 
         }
       }
       &.sectionSuccess {
-        border-color: $success !important;
-        .slds-accordion__summary-heading {
-          border: toRem(1) solid $success !important; 
-          border-radius: 3px;
-        }
-        .error {
-          .slds-border_bottom {
-            border-color: $danger !important;
-            border-width: 2px; 
-          } 
-        }
-        .success {
-          .slds-border_bottom {
-            border-color: $success !important; 
-            border-width: 2px;
-          } 
-        }
-        .warning {
-          .slds-border_bottom {
-            border-color: $warning !important; 
-            border-width: 2px;
-          } 
-        }
-        .info {
-          .slds-border_bottom {
-            border-color: $info !important; 
-            border-width: 2px;
-          } 
+        &, .slds-accordion__summary-heading {
+          border-color: $success !important; 
         }
       }
       &.sectionWarning {
-        border-color: $warning !important;
-        .slds-accordion__summary-heading {
-          border: toRem(1) solid $warning !important; 
-          border-radius: 3px;
-        }
-        .error {
-          .slds-border_bottom {
-            border-color: $danger !important;
-            border-width: 2px; 
-          } 
-        }
-        .success {
-          .slds-border_bottom {
-            border-color: $success !important; 
-            border-width: 2px;
-          } 
-        }
-        .warning {
-          .slds-border_bottom {
-            border-color: $warning !important; 
-            border-width: 2px;
-          } 
-        }
-        .info {
-          .slds-border_bottom {
-            border-color: $info !important; 
-            border-width: 2px;
-          } 
+        &, .slds-accordion__summary-heading {
+          border-color: $warning !important; 
         }
       }
       &.sectionInfo {
-        border-color: $info !important;
-        .slds-accordion__summary-heading {
-          border: toRem(1) solid $info !important; 
-          border-radius: 3px;
-        }
-        .error {
-          .slds-border_bottom {
-            border-color: $danger !important;
-            border-width: 2px; 
-          } 
-        }
-        .success {
-          .slds-border_bottom {
-            border-color: $success !important; 
-            border-width: 2px;
-          } 
-        }
-        .warning {
-          .slds-border_bottom {
-            border-color: $warning !important; 
-            border-width: 2px;
-          } 
-        }
-        .info {
-          .slds-border_bottom {
-            border-color: $info !important; 
-            border-width: 2px;
-          } 
+        &, .slds-accordion__summary-heading {
+          border-color: $info !important; 
         }
       }
     }
 
     //status
-    &.status-active {
-      .slds-accordion__summary-content {
-        &:after {
-          content: "Active";
-          background: $secondary;
-          color: $primary;
-        }
-      }
-    }
+    // &.status-active {
+    //   .slds-accordion__summary-content {
+    //     &:after {
+    //       content: "Active";
+    //       background: $secondary;
+    //       color: $primary;
+    //     }
+    //   }
+    // }
 
-    &.status-future {
-      .slds-accordion__summary-content {
-        color: $gray-900;
-        font-size: $bfsize;
-        &::before {
-          background-color: $primary;
-        }
+    // &.status-future {
+    //   .slds-accordion__summary-content {
+    //     color: $gray-900;
+    //     font-size: $bfsize;
+    //     &::before {
+    //       background-color: $primary;
+    //     }
 
-        &:after {
-          content: "Future";
-          background: $primary;
-          color: $white;
-        }
-      }
-    }
+    //     &:after {
+    //       content: "Future";
+    //       background: $primary;
+    //       color: $white;
+    //     }
+    //   }
+    // }
   }
 
   // content
