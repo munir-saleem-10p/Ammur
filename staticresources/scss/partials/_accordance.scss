@@ -24,6 +24,11 @@
 
     .slds-accordion__summary-heading {
       margin-right: 0 !important;
+
+      .icoSFArrowdown {
+        color: $gray-900;
+        font-size: toRem(16);
+      }
     }
 
     // button
@@ -294,6 +299,131 @@
       @extend .border-gray-300;
       @extend .brd-4;
       @extend .p-16px;
+      
+      &.sectionError {
+        border-color: $danger !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $danger !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $danger !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $success !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $warning !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $info !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionSuccess {
+        border-color: $success !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $success !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $danger !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $success !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $warning !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $info !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionWarning {
+        border-color: $warning !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $warning !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $danger !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $success !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $warning !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $info !important; 
+            border-width: 2px;
+          } 
+        }
+      }
+      &.sectionInfo {
+        border-color: $info !important;
+        .slds-accordion__summary-heading {
+          border: toRem(1) solid $info !important; 
+          border-radius: 3px;
+        }
+        .error {
+          .slds-border_bottom {
+            border-color: $danger !important;
+            border-width: 2px; 
+          } 
+        }
+        .success {
+          .slds-border_bottom {
+            border-color: $success !important; 
+            border-width: 2px;
+          } 
+        }
+        .warning {
+          .slds-border_bottom {
+            border-color: $warning !important; 
+            border-width: 2px;
+          } 
+        }
+        .info {
+          .slds-border_bottom {
+            border-color: $info !important; 
+            border-width: 2px;
+          } 
+        }
+      }
     }
 
     //status

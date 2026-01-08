@@ -489,6 +489,22 @@ input::-ms-clear {
 
 
 // DC Container Fix
+.dcContainerCol {
+  .whiteBarAccordance {
+     &.slds-p-left--small {
+       padding-left: toRem(0) !important;    
+     }
+  }
 
+  .industry-badge {
+    border-radius: toRem(5);
+    background-color: $warning2;
+    color: $black;
+  }
+
+  .customInfo {
+    align-items: center;
+  }
+}
 
 // DC Container Fix [END]
