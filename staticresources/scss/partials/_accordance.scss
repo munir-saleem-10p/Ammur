@@ -24,6 +24,11 @@
 
     .slds-accordion__summary-heading {
       margin-right: 0 !important;
+
+      .icoSFArrowdown {
+        color: $gray-900;
+        font-size: toRem(16);
+      }
     }
 
     // button
