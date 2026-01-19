@@ -285,11 +285,28 @@
       }
     }
 
+    &.icoPolicy {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoPolicy;
+          background-color: map.get($bt-tertiary, 850);
+          border-radius: toRem(3);
+        }
+      }
+    }
+
     //no icon
     &.noIcon .slds-accordion__summary-content {
       &:before {
         display: none !important;
       }
+    }
+
+    .fitment-btn {
+      background-color: map.get($bt-tertiary, 850);
+      padding: toRem(6) toRem(12);
+      border-radius: toRem(8);
     }
 
     // Card Style
@@ -355,6 +372,75 @@
         }
       }
     }
+
+    &.programStatus { 
+      &.sectionError,
+      &.sectionSuccess,
+      &.sectionWarning,
+      &.sectionInfo{ 
+        border-width: toRem(1);
+        border-style: solid; 
+        border-radius: 3px;
+      }
+
+      &.sectionSuccess {
+        border-color: $success !important; 
+        .fitment-btn {
+          background-color: $success;
+        }
+        &.icoPolicy {
+          .slds-accordion__summary-content {
+            &:before {
+              background-color: $success;
+            }
+          }
+        }
+      }
+
+      &.sectionError {
+        border-color: map.get($bt-tertiary, 750) !important; 
+        .fitment-btn {
+          background-color: map.get($bt-tertiary, 750);
+        }
+        &.icoPolicy {
+          .slds-accordion__summary-content {
+            &:before {
+              background-color: map.get($bt-tertiary, 750);
+            }
+          }
+        }
+      }
+
+      &.sectionWarning {
+        border-color: $yellow !important; 
+        .fitment-btn {
+          background-color: $yellow;
+        }
+        &.icoPolicy {
+          .slds-accordion__summary-content {
+            &:before {
+              background-color: $yellow;
+            }
+          }
+        }
+      }
+
+      &.sectionInfo {
+        border-color: $dodgerBlue !important; 
+        .fitment-btn {
+          background-color: $dodgerBlue;
+        }
+        &.icoPolicy {
+          .slds-accordion__summary-content {
+            &:before {
+              background-color: $dodgerBlue;
+            }
+          }
+        }
+      }
+    }
+
+    
 
     //status
     // &.status-active {
