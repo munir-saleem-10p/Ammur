@@ -8,6 +8,8 @@ $bt-primary: (
   100: #91C855, // for header and buttons
   200: #4E890E, // font button fonts color
   300: #71AD35, // tooltips
+  400: #f6ffed,
+  500: #008236, 
 );
 
 $bt-secondary: (
@@ -26,6 +28,7 @@ $bt-tertiary: (
   500: #FFDED7,
   600: #0DC44A,
   700: #FCE460,
+  750: #FF8D8D,
   800: #E14526,
   850: #C9C9C9,
   900: #c9c9c999,
@@ -119,8 +122,8 @@ $theme-colors: (
   "bt-primary-100": map.get($bt-primary, 100),
   "bt-primary-200": map.get($bt-primary, 200),
   "bt-primary-300": map.get($bt-primary, 300),
-  // "bt-primary-400": map.get($bt-primary, 400),
-  // "bt-primary-500": map.get($bt-primary, 500),
+  "bt-primary-400": map.get($bt-primary, 400),
+  "bt-primary-500": map.get($bt-primary, 500), 
 
   // theme secondary set
   "bt-secondary-100": map.get($bt-secondary, 100),
@@ -137,6 +140,7 @@ $theme-colors: (
   "bt-tertiary-500": map.get($bt-tertiary, 500),
   "bt-tertiary-600": map.get($bt-tertiary, 600),
   "bt-tertiary-700": map.get($bt-tertiary, 700),
+  "bt-tertiary-750": map.get($bt-tertiary, 750),
   "bt-tertiary-800": map.get($bt-tertiary, 800),
   "bt-tertiary-850": map.get($bt-tertiary, 850),
   "bt-tertiary-900": map.get($bt-tertiary, 900),

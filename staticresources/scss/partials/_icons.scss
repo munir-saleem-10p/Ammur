@@ -79,6 +79,8 @@ $iconEditNotes: url("./../images/ico-editNotes.svg");
 
 $icoSFArrowdown : url("./../images/ico-sf-arrowdown.svg");
 
+$icoPolicy: url("./../images/ico-policy.svg");
+
 $icons: (
   "icoEye" : $icoEye,
   "icoEyeSlash" : $icoEyeSlash,
@@ -142,5 +144,6 @@ $icons: (
   // "icoHistory" : $icoHistory,
   // "icoNote" : $icoNote,
   "icoCradit" : $icoCradit,
-  "icoSFArrowdown": $icoSFArrowdown
+  "icoSFArrowdown": $icoSFArrowdown,
+  "icoPolicy": $icoPolicy,
 );
