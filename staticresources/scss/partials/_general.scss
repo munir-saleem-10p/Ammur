@@ -462,7 +462,9 @@ input::-ms-clear {
       p:nth-child(2){font-weight: $font-weight-bold;}
     }
   }
+}
 
+.nasaAppWrapper{
   .slds-box {
     @extend .border-gray-300;
 
@@ -471,28 +473,20 @@ input::-ms-clear {
     }
   }
 
-  .nasaAppWrapper{
-
-    @media screen and (min-width: 1900px) {
-      .mainSectionLeft{
-        width: calc(55vw - 30px) !important;
-      }
-      .mainSectionRight{
-        width: calc(45vw - 30px) !important;
-      }
+  @media screen and (min-width: 1900px) {
+    .mainSectionLeft{
+      width: calc(60vw - 21px) !important;
     }
-
-
-    > .slds-card > .slds-card__body{
-      margin-top: 0
+    .mainSectionRight{
+      width: calc(40vw - 21px) !important;
     }
+  }
 
-    .slds-box {
-      @extend .border-gray-300;
-    }
-    .slds-text-link {
-      @extend .text-link;
-    }
+  > .slds-card > .slds-card__body{
+    margin-top: 0
+  }
+  .slds-text-link {
+    @extend .text-link;
   }
 }
 
