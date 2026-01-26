@@ -92,6 +92,7 @@ $inkblue: #2f3bc1;
 $dodgerBlue: #0085ff;
 $darkYellow: #B89C00;
 $warning2: #FFFF6F66;
+$darkRed: #B34122;
 
 // Theme color Variables [Start]
 $primary: map.get($bt-primary, 100);
@@ -179,6 +180,7 @@ $theme-colors: (
   "green": $green,
   "darkYellow": $darkYellow,
   "warning2": $warning2,
+  "darkRed": $darkRed,
   // "indigo": $indigo,
   // "purple": $purple,
   // "pink": $pink,

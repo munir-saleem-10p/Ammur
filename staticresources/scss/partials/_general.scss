@@ -455,7 +455,7 @@ input::-ms-clear {
 // Nasa CRM
 .nasaCRM {
   .slds-template_default{background-color: $gray-300; height: auto; min-height: 100vh;}
-  
+ 
   .highlights {
     .slds-button{color:$secondary; border-color: $gray-300;}
     .slds-page-header__detail-block{
@@ -463,25 +463,25 @@ input::-ms-clear {
     }
   }
 }
-
+ 
 .nasaCRM, .nasaAppWrapper{
   .slds-box {
     @extend .border-gray-300;
-
+ 
     &.border-none{
       border: none !important;
     }
   }
-
+ 
   @media screen and (min-width: 1900px) {
     .mainSectionLeft{
-      width: calc(60vw - 21px) !important;
+      width: calc(60vw - 25px) !important;
     }
     .mainSectionRight{
       width: calc(40vw - 22px) !important;
     }
   }
-
+ 
   > .slds-card > .slds-card__body{
     margin-top: 0
   }
@@ -518,12 +518,35 @@ input::-ms-clear {
   }
 }
 
+.cross-icon-text {
+  svg {
+    fill: $darkRed;
+    width: toRem(13);
+    height: toRem(13);
+    margin-right: toRem(6);
+    padding-bottom: toRem(2);
+  }
+}
+
+.close-modal-icon {
+  svg {
+    width: toRem(18);
+  }
+}
+
 // DC Container Fix
 .dcContainerCol {
   .whiteBarAccordance {
      &.slds-p-left--small {
        padding-left: toRem(0) !important;    
      }
+     
+  }
+
+  .sos-match-card {
+    &.slds-m-left--small, .mb-12px {
+      margin: toRem(0) !important;    
+    }
   }
 
   .industry-badge {
