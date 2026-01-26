@@ -524,6 +524,13 @@ input::-ms-clear {
      &.slds-p-left--small {
        padding-left: toRem(0) !important;    
      }
+     
+  }
+
+  .sos-match-card {
+    &.slds-m-left--small, .mb-12px {
+      margin: toRem(0) !important;    
+    }
   }
 
   .industry-badge {
