@@ -46,50 +46,50 @@
 
 /* Neutral button */
 .nasaAppWrapper{
-lightning-button .slds-button_neutral {
-  @include custom-brand-button(#f3f3f3, #e0e0e0, #cccccc);
-  color: #000;
-}
-
-/* Brand button */
-lightning-button .slds-button_brand {
-  @include custom-brand-button($button-primary-bg, $button-primary-bg-hover, $button-primary-focus);
-  color: $button-primary-font-color;
-
-  &:disabled{
-    background: $primary !important; color: inherit !important; opacity: 0.5;
+  lightning-button .slds-button_neutral {
+    @include custom-brand-button(#f3f3f3, #e0e0e0, #cccccc);
+    color: #000;
   }
-}
 
-/* Brand-outline button */
-lightning-button .slds-button_brand-outline {
-  @include custom-brand-button($button-outline-primary-bg-hover, $button-outline-primary-bg-hover, $button-outline-primary-focus);
-  color: $button-outline-primary-font-color;
-}
+  /* Brand button */
+  lightning-button .slds-button_brand {
+    @include custom-brand-button($button-primary-bg, $button-primary-bg-hover, $button-primary-focus);
+    color: $button-primary-font-color;
 
-/* Destructive button */
-lightning-button .slds-button_destructive {
-  @include custom-brand-button(#c23934, #a61d1a, #ff9999);
-  color: #fff;
-}
+    &:disabled{
+      background: $primary !important; color: inherit !important; opacity: 0.5;
+    }
+  }
 
-/* Destructive-text button */
-lightning-button .slds-button_destructive-text {
-  @include custom-brand-button(transparent, #ffe5e5, #ff9999);
-  color: #c23934;
-}
+  /* Brand-outline button */
+  lightning-button .slds-button_brand-outline {
+    @include custom-brand-button($button-outline-primary-bg-hover, $button-outline-primary-bg-hover, $button-outline-primary-focus);
+    color: $button-outline-primary-font-color;
+  }
 
-/* Inverse button */
-lightning-button .slds-button_inverse {
-  @include custom-brand-button(#ffffff, #f0f0f0, #cccccc);
-  color: #005fb2;
-}
+  /* Destructive button */
+  lightning-button .slds-button_destructive {
+    @include custom-brand-button(#c23934, #a61d1a, #ff9999);
+    color: #fff;
+  }
 
-/* Success button */
-lightning-button .slds-button_success {
-  @include custom-brand-button(#2e844a, #27663f, #99cc99);
-  color: #fff;
-}
+  /* Destructive-text button */
+  lightning-button .slds-button_destructive-text {
+    @include custom-brand-button(transparent, #ffe5e5, #ff9999);
+    color: #c23934;
+  }
+
+  /* Inverse button */
+  lightning-button .slds-button_inverse {
+    @include custom-brand-button(#ffffff, #f0f0f0, #cccccc);
+    color: #005fb2;
+  }
+
+  /* Success button */
+  lightning-button .slds-button_success {
+    @include custom-brand-button(#2e844a, #27663f, #99cc99);
+    color: #fff;
+  }
 }
 
 .status-button {
