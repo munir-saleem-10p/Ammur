@@ -462,9 +462,9 @@ input::-ms-clear {
       p:nth-child(2){font-weight: $font-weight-bold;}
     }
   }
-}
 
 .nasaCRM, .nasaAppWrapper{
+  
   .slds-box {
     @extend .border-gray-300;
 
@@ -482,11 +482,16 @@ input::-ms-clear {
     }
   }
 
-  > .slds-card > .slds-card__body{
-    margin-top: 0
-  }
-  .slds-text-link {
-    @extend .text-link;
+    > .slds-card > .slds-card__body{
+      margin-top: 0
+    }
+
+    .slds-box {
+      @extend .border-gray-300;
+    }
+    .slds-text-link {
+      @extend .text-link;
+    }
   }
 }
 
@@ -515,6 +520,22 @@ input::-ms-clear {
       padding-left: toRem(20);
       margin: toRem(10) 0;
     }
+  }
+}
+
+.cross-icon-text {
+  svg {
+    fill: $darkRed;
+    width: toRem(13);
+    height: toRem(13);
+    margin-right: toRem(6);
+    padding-bottom: toRem(2);
+  }
+}
+
+.close-modal-icon {
+  svg {
+    width: toRem(18);
   }
 }
 
