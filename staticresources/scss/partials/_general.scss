@@ -464,7 +464,7 @@ input::-ms-clear {
   }
 }
 
-.nasaAppWrapper{
+.nasaCRM, .nasaAppWrapper{
   .slds-box {
     @extend .border-gray-300;
 
@@ -478,7 +478,7 @@ input::-ms-clear {
       width: calc(60vw - 21px) !important;
     }
     .mainSectionRight{
-      width: calc(40vw - 21px) !important;
+      width: calc(40vw - 22px) !important;
     }
   }
 
