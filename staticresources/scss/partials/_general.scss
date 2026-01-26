@@ -455,43 +455,38 @@ input::-ms-clear {
 // Nasa CRM
 .nasaCRM {
   .slds-template_default{background-color: $gray-300; height: auto; min-height: 100vh;}
-  
+ 
   .highlights {
     .slds-button{color:$secondary; border-color: $gray-300;}
     .slds-page-header__detail-block{
       p:nth-child(2){font-weight: $font-weight-bold;}
     }
   }
-
+}
+ 
 .nasaCRM, .nasaAppWrapper{
-  
   .slds-box {
     @extend .border-gray-300;
-
+ 
     &.border-none{
       border: none !important;
     }
   }
-
+ 
   @media screen and (min-width: 1900px) {
     .mainSectionLeft{
-      width: calc(60vw - 21px) !important;
+      width: calc(60vw - 25px) !important;
     }
     .mainSectionRight{
       width: calc(40vw - 22px) !important;
     }
   }
-
-    > .slds-card > .slds-card__body{
-      margin-top: 0
-    }
-
-    .slds-box {
-      @extend .border-gray-300;
-    }
-    .slds-text-link {
-      @extend .text-link;
-    }
+ 
+  > .slds-card > .slds-card__body{
+    margin-top: 0
+  }
+  .slds-text-link {
+    @extend .text-link;
   }
 }
 
