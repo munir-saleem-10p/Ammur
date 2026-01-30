@@ -1,20 +1,32 @@
 @use "sass:map";
 /* Input [Start] */
 
-.error .amr-output-fld .slds-form-element__static{
-    color: $danger; font-weight: $font-weight-bold;
+
+.error,
+.warning,
+.info,
+.success{
+  .slds-border_bottom{border-width: 2px;}
 }
 
-.warning .amr-output-fld .slds-form-element__static{
-    color: $warning; font-weight: $font-weight-bold;
+.error{
+  .slds-border_bottom {border-color: $danger !important}
+  .amr-output-fld .slds-form-element__static{color: $danger; font-weight: $font-weight-bold;}
 }
 
-.info .amr-output-fld .slds-form-element__static{
-    color: $info; font-weight: $font-weight-bold;
+.warning{
+  .slds-border_bottom {border-color: $warning !important}
+  .amr-output-fld .slds-form-element__static{color: $warning; font-weight: $font-weight-bold;}
 }
 
-.success .amr-output-fld .slds-form-element__static{
-    color: $success; font-weight: $font-weight-bold;
+.info{
+  .slds-border_bottom {border-color: $info !important}
+  .amr-output-fld .slds-form-element__static{color: $info; font-weight: $font-weight-bold;}
+}
+
+.success{
+  .slds-border_bottom {border-color: $success !important}
+  .amr-output-fld .slds-form-element__static{color: $success; font-weight: $font-weight-bold;}
 }
 
 .amr-output-fld{
@@ -67,6 +79,19 @@
   // no label
   &.nolabel{
     .slds-form-element__label{display: none;}
+  }
+
+  @media (min-width: 48em) {
+    &.comfy{
+      padding-left: toRem(4); padding-right: toRem(4);
+    }
+    &.compact {
+      lightning-datepicker{position: relative;
+        // .slds-form-element__label{position: absolute;}
+        .slds-form-element__label, .slds-form-element__help{max-width: 32%; padding-left: 3px;}
+        .slds-dropdown-trigger .slds-form-element__control {width: calc(100% - 34%); position: absolute; left: 33%; top:0;}
+      } 
+    }
   }
 }
 

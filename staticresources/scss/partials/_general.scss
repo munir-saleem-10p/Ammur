@@ -464,6 +464,7 @@ input::-ms-clear {
   }
 }
  
+// Nasa App Wrapper [Start]
 .nasaCRM, .nasaAppWrapper{
   .slds-box {
     @extend .border-gray-300;
@@ -489,6 +490,8 @@ input::-ms-clear {
     @extend .text-link;
   }
 }
+
+// Nasa App Wrapper [ENd]
 
 .list-style {
   ul {

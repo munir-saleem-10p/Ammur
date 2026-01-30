@@ -324,31 +324,6 @@
           border-style: solid; 
           border-radius: 3px;
         }
-
-        .error {
-          .slds-border_bottom {
-            border-color: $danger !important;
-            border-width: 2px; 
-          } 
-        }
-        .success {
-          .slds-border_bottom {
-            border-color: $success !important; 
-            border-width: 2px;
-          } 
-        }
-        .warning {
-          .slds-border_bottom {
-            border-color: $warning !important; 
-            border-width: 2px;
-          } 
-        }
-        .info {
-          .slds-border_bottom {
-            border-color: $info !important; 
-            border-width: 2px;
-          } 
-        }
       }
       
       &.sectionError {
