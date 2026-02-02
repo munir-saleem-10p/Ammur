@@ -62,7 +62,7 @@
   .slds-textarea{min-height: toRem(32) !important; font-size: var(--lwc-fontSize3, 0.8125rem); padding-left: toRem(8) !important; padding-right: toRem(8) !important;}
 }
 
-.slds-size_1-of-1.amr-fulCol-fld{
+.amr-fulCol-fld{
   @media (min-width: 48em) {
     .slds-form-element_horizontal .slds-form-element__control, .slds-form_horizontal .slds-form-element .slds-form-element__control, .slds-form_stacked .slds-form-element_horizontal .slds-form-element__control {
       padding-left: 15.5%;
@@ -83,14 +83,32 @@
 
   @media (min-width: 48em) {
     &.comfy{
-      padding-left: toRem(4); padding-right: toRem(4);
+      padding-left: 0; padding-right: toRem(4);
     }
     &.compact {
       lightning-datepicker{position: relative;
         // .slds-form-element__label{position: absolute;}
         .slds-form-element__label, .slds-form-element__help{max-width: 32%; padding-left: 3px;}
         .slds-dropdown-trigger .slds-form-element__control {width: calc(100% - 34%); position: absolute; left: 33%; top:0;}
-      } 
+      }
+
+
+    }
+    &.fld-lookUp{
+      .btnWrapper{
+        .slds-button{@include square(toRem(32));
+          svg{transform: translate(1.85%, 1.85%);}
+        }
+      }
+
+      &.comfy {
+        .btnWrapper{margin-top:toRem(24);
+          .slds-button{height: toRem(33) !important;}
+        }
+      }
+      &.compact {
+        .btnWrapper{margin-top:toRem(2);}
+      }
     }
   }
 }
