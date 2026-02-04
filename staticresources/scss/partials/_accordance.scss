@@ -296,6 +296,17 @@
       }
     }
 
+    &.icoMultiFiles{
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoMultiFiles;
+          background-color: map.get($bt-tertiary, 850);
+          border-radius: toRem(3);
+        }
+      }
+    }
+
     //no icon
     &.noIcon .slds-accordion__summary-content {
       &:before {
