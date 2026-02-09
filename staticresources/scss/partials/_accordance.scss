@@ -30,10 +30,12 @@
         lightning-primitive-icon {
           .slds-button__icon {
             transform: rotate(90deg);
+            color: $gray-900 !important;
           }
         }
         .ico-expcol {
           transform: rotate(0deg);
+          color:$gray-900 !important;
         }
       }
 
@@ -45,10 +47,12 @@
         lightning-primitive-icon {
           .slds-button__icon {
             transform: rotate(180deg);
+            color: $gray-900 !important;
           }
         }
         .ico-expcol {
           transform: rotate(180deg);
+          color: $gray-900 !important;
         }
       }
 
@@ -649,7 +653,7 @@
     }
 
     .border-bottom-2 {
-      border-bottom: toRem(2) solid #4e890e !important;
+      border-bottom: toRem(2) solid !important;
     }
   }
 
