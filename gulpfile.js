@@ -12,6 +12,7 @@ const paths = {
   output: {
     "poc": "./../nasa/NASA-POC/force-app/main/default/staticresources/NasaAssets/css",
     "dev": "./../nasa/NASA-DEV/force-app/main/default/staticresources/NasaAssets/css",
+	"dcdev": "./../deal-coach/dealCoach-dev/force-app/main/default/staticresources/AMUR_DealCoachAssets/css",
   },
 };
 
@@ -53,3 +54,4 @@ function createWatchTask(env, type = "sass") {
 // Sass
 exports.ptl_poc = series(createSassTask("poc"), createWatchTask("poc"));
 exports.ptl_dev = series(createSassTask("dev"), createWatchTask("dev"));
+exports.ptl_dcdev = series(createSassTask("dcdev"), createWatchTask("dcdev"));

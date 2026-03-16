@@ -1,4 +1,4 @@
-.simpleTabs{
+.simpleTabs, .nasaLeadStandalone.windowViewMode-normal.lafPageHost.active{
     .slds-tabs_default__nav{
         @include mq(0, $mq-medium){
             flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; padding-bottom: toRem(10); 

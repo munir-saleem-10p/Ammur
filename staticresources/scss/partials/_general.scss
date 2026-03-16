@@ -457,17 +457,56 @@ input::-ms-clear {
 }
 // General Content Styling [END]
 
-// Nasa CRM
-.nasaCRM {
-  .slds-template_default{background-color: $gray-300; height: auto; min-height: 100vh;}
+// Nasa Lead Standalone [Start]
+.nasaLeadStandalone.windowViewMode-normal.lafPageHost.active {
+  // .slds-template_default{background-color: $gray-300; height: auto; min-height: 100vh;}
  
-  .highlights {
-    .slds-button{color:$secondary; border-color: $gray-300;}
-    .slds-page-header__detail-block{
-      p:nth-child(2){font-weight: $font-weight-bold;}
+  // .highlights {
+  //   .slds-button{color:$secondary; border-color: $gray-300;}
+  //   .slds-page-header__detail-block{
+  //     p:nth-child(2){font-weight: $font-weight-bold;}
+  //   }
+  // }
+
+  .whiteBarAccordance {
+    padding-left: 0 !important;
+  }
+  .section-layout-container{
+    @extend .border-gray-300; @extend .p-16px; border-radius: toRem(4);
+    .row-main{
+      background: #fff;
+    }
+    // accordance title
+    .slds-section__title{
+      .slds-section__title-action{display: flex; flex-direction: row-reverse; padding:12px 16px;
+        .slds-section__title-action-icon {margin-right: 0;
+          svg{fill: $gray-900;}
+        }
+        > span{flex: 1; color: $gray-900; font-size: toRem(16); font-weight: $font-weight-semibold; padding-left: 0; display: flex; align-items: center;}
+      }
+    }
+
+    // helptext
+    lightning-helptext{
+      .slds-button{
+        @extend .filter-primary-100;
+      }
+    }
+
+    //output filed
+    .test-id__output-root{
+      @extend .amr-output-fld;
+    }
+
+    //
+    .slds-card_related-list-fix{
+      .cardStyle {
+        
+      }
     }
   }
 }
+// Nasa Lead Standalone [END]
  
 // Nasa App Wrapper [Start]
 .nasaCRM, .nasaAppWrapper{
@@ -586,6 +625,18 @@ input::-ms-clear {
       border: 1px solid map.get($bt-primary, 300);
       border-radius: toRem(5);
       background:$gray-100;
+    }
+  }
+
+  .dcSalesSummaryWrapper{
+    @media screen and (min-width: 1024px) {
+      .whiteBarAccordance{
+        // .cardStyle{min-height: 69vh;
+          // .slds-accordion__section{min-height: 66vh;}
+        // }
+        .max-height-sec{max-height: unset;}
+        .notes-content{min-height: 58vh;}
+      }
     }
   }
 }
