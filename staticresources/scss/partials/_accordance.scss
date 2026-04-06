@@ -181,6 +181,24 @@
       }
     }
 
+    &.icoAddress {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoAddress;
+        }
+      }
+    }
+
+    &.icoClock {
+      .slds-accordion__summary-content {
+        &:before {
+          @extend %beforeBgNoRepeat;
+          background-image: $icoClock;
+        }
+      }
+    }
+
     &.icoOnlineBusiness {
       .slds-accordion__summary-content {
         &:before {
