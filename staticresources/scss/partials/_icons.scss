@@ -67,6 +67,7 @@ $icoCircleCheck: url("./../images/ico-circle-check.svg");
 $icoPrinter: url("./../images/ico-printer.svg");
 $icoLocation: url("./../images/ico-location.svg");
 $icoMap: url("./../images/ico-map.svg");
+$icoNoImage: url("./../images/ico-noImage.svg");
 
 $icoLead: url("./../images/ico-lead.svg");
 $icoSearchBox: url("./../images/ico-searchBox.svg");
@@ -150,6 +151,7 @@ $icons: (
   "icoPrinter" : $icoPrinter,
   "icoLocation" : $icoLocation,
   "icoMap" : $icoMap,
+  "icoNoImage": $icoNoImage,
   "icoBank" : $icoBank,
   "icoNotes" : $icoNotes,
   // "icoHistory" : $icoHistory,
