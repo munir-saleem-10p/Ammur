@@ -23,6 +23,9 @@ $bt-secondary: (
 $bt-tertiary: (
   100: #E6F4D3,
   200: #D4F3ED,
+  210: #21678A,
+  220: #B8DCF5,
+  230: #FFFFFF,
   300: #CEFF9A,
   400: #FFFFC6,
   500: #FFDED7,
@@ -99,7 +102,7 @@ $primary: map.get($bt-primary, 100);
 $secondary: map.get($bt-secondary, 100);
 
 $success: map.get($bt-primary, 100);
-$info: $blue;
+$info: map.get($bt-tertiary, 210);
 $warning: $darkYellow;
 $danger: map.get($bt-tertiary, 800) !default;
 
