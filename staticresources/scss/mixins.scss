@@ -3,7 +3,7 @@
 @use "sass:map";
 @use "sass:math";
 @import "./variables";
-@import "./../../node_modules/bourbon/core/bourbon.scss";
+// @import "./../../node_modules/bourbon/core/bourbon.scss";
 
 // conver px to rem
 @function toRem($value) {
