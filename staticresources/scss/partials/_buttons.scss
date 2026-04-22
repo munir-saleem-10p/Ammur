@@ -55,10 +55,6 @@
   lightning-button .slds-button_brand {
     @include custom-brand-button($button-primary-bg, $button-primary-bg-hover, $button-primary-focus);
     color: $button-primary-font-color;
-
-    &:disabled{
-      background: $primary !important; color: inherit !important; opacity: 0.5;
-    }
   }
 
   /* Brand-outline button */
@@ -89,6 +85,17 @@
   lightning-button .slds-button_success {
     @include custom-brand-button(#2e844a, #27663f, #99cc99);
     color: #fff;
+  }
+
+// disabled  buttons
+lightning-button .slds-button_brand,
+lightning-button .slds-button_brand-outline,
+lightning-button .slds-button_destructive,
+lightning-button .slds-button_destructive-text,
+lightning-button .slds-button_inverse,
+lightning-button .slds-button_success {
+  &:disabled {
+    @extend .btn-disabled;
   }
 }
 
