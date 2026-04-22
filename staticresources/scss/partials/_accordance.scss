@@ -702,7 +702,36 @@
       }
     }
 
-    .notes-content {
+    .slds-button_submit {
+      background-color: $primary;
+      color: $secondary;
+      text-transform: uppercase;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: toRem(12);
+      padding: 0 16px;
+
+      .send-btn {
+        transform: rotate(320deg);
+        margin-top: -4px;
+
+        &, svg{fill: $secondary;}
+
+        svg {
+          width: toRem(13);
+        }
+      }
+      &:disabled{
+        &, &:hover, &:active, &.active{
+          background: $gray-375 !important; color: $gray-700 !important; pointer-events: none;
+          .send-btn{
+            &, svg{fill: $gray-700;}
+          }
+        }
+      }
+    }
+
+    .notes-content {  
       ul {
         list-style: disc;
         padding-left: 25px;

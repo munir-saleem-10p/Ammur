@@ -87,36 +87,37 @@
     color: #fff;
   }
 
-// disabled  buttons
-lightning-button .slds-button_brand,
-lightning-button .slds-button_brand-outline,
-lightning-button .slds-button_destructive,
-lightning-button .slds-button_destructive-text,
-lightning-button .slds-button_inverse,
-lightning-button .slds-button_success {
-  &:disabled {
-    @extend .btn-disabled;
-  }
-}
-
-.status-button {
-    border: none;
-    border-radius: 12px;  
-    display: inline-flex;
-    align-items: center;
-    padding: toRem(12) toRem(20);
-    gap: 0.35rem;
-    cursor: default;
-
-    svg {
-        width: toRem(17);
-        height: toRem(17);
-        fill: $secondary;
+  // disabled  buttons
+  lightning-button .slds-button_brand,
+  lightning-button .slds-button_brand-outline,
+  lightning-button .slds-button_destructive,
+  lightning-button .slds-button_destructive-text,
+  lightning-button .slds-button_inverse,
+  lightning-button .slds-button_success {
+    &:disabled {
+      @extend .btn-disabled;
     }
-}
+  }
 
-.convert-button {
-  width: 100%;
-  max-width: toRem(320);
-  border-radius: toRem(25);
+  .status-button {
+      border: none;
+      border-radius: 12px;  
+      display: inline-flex;
+      align-items: center;
+      padding: toRem(12) toRem(20);
+      gap: 0.35rem;
+      cursor: default;
+
+      svg {
+          width: toRem(17);
+          height: toRem(17);
+          fill: $secondary;
+      }
+  }
+
+  .convert-button {
+    width: 100%;
+    max-width: toRem(320);
+    border-radius: toRem(25);
+  }
 }
