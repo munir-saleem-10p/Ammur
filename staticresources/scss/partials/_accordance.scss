@@ -355,7 +355,6 @@
         .slds-accordion__summary-heading {
           border-width: toRem(1);
           border-style: solid; 
-          border-radius: 3px;
         }
       }
       
@@ -389,6 +388,15 @@
         border-width: toRem(1);
         border-style: solid; 
         border-radius: 3px;
+
+        .slds-accordion__summary-content {
+          &:before{
+            background-size: auto !important;
+            border-radius: 4px !important;
+            flex: none;
+          }
+          span{white-space: normal;}
+        }
       }
 
       &.sectionSuccess {
@@ -739,5 +747,4 @@
     }
   }
 }
-
 // White Bar Accordance [END]
