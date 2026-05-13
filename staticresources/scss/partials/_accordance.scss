@@ -672,7 +672,7 @@
 
   &.badgeVariant {
     .slds-accordion__summary-heading {
-      height: 56px;
+      min-height: 50px;
       .slds-accordion__content {
         @extend .overflow-visible;
       }
